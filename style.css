@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+ body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #0d0d0d 0%, #497BE8  100%);
+ }   
+
+
+
+
+.box{
+    margin: 120px auto;
+    max-width: 400px ;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    
+    padding: 25px;
+
+}
+.box header{
+    font-size: 40px;
+    font-weight: 600;
+    
+    
+
+}
+
+
+
+.box .inputSec{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+
+
+}
+
+.inputSec input{
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+.inputSec button{
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none; 
+    background: #0d0d0d;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 5px;
+    opacity: 0.8;
+    pointer-events: none;
+    
+
+   
+}
+.inputSec button.active{
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.box .todolist{
+    max-height: 250px;
+    overflow-y: auto;
+
+}
+
+.todolist li {
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: rgb(205, 204, 204);
+    border-radius: 3px;
+    margin-bottom: 3px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+ .todolist li span{
+    position: absolute;
+    right: -42px;
+    color: white;
+    background-color: #0d0d0d;
+    width: 45px;
+    text-align: center;
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+ }
+
+ .todolist li:hover span{
+    right: 0px;
+    overflow: hidden;
+    
+ }
+
+.box .footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 25px;
+    align-items: center;
+}
+.footer button{
+    
+
+
+    width: 80px;
+    height: 100%;
+    border: none;
+    outline: none; 
+    background: #0d0d0d;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: 0.1s ease-in;
+    overflow: hidden;
+}
+
+.footer button:hover{
+    width: 85px;
+    height: 105%;
+    background-color: rgb(250, 5, 5);
+    color: black;
+    border: 2px solid black;
+    
+    position: relative;
+
+}
